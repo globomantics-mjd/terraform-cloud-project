@@ -13,6 +13,10 @@ variable "environment" {
   description = "(Optional) Application environment for deployment, defaults to development."
   default     = "development"
 }
+variable "billable" {
+  type        = string
+  description = "(Required) Billable code for project."
+}
 
 variable "region" {
   type        = string
